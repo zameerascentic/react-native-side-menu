@@ -234,6 +234,8 @@ export default class SideMenu extends React.Component {
   }
 
   render(): React.Element<void, void> {
+    console.log('vals');
+    console.log(this.state.width);
     const boundryStyle = this.props.menuPosition === 'right' ?
       { left: this.state.width - this.state.openMenuOffset } :
       { right: this.state.width - this.state.openMenuOffset };
